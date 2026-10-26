@@ -4608,7 +4608,7 @@ function drawDialogue() {
 }
 
 // ================= 封面 =================
-const TITLE_EN = "You Can't Miss What You Don't Remember";
+const GAME_TITLE = "再见，小星星";
 // 菜单项：enabled === false 的会变灰、不可选也不可点
 const TITLE_MENU = [
   { id: 'start',    label: 'Start Game' },
@@ -4678,9 +4678,9 @@ function drawTitle() {
   const a1 = Math.min(1, titleT / 1.2);
   const ty = TITLE_Y + (1 - a1) * 12;
   ctx.globalAlpha = a1 * 0.6;
-  text(TITLE_EN, W / 2 + 2, ty + 3, 27, '#000000', 'center', true);
+  text(GAME_TITLE, W / 2 + 2, ty + 3, 30, '#000000', 'center', true);
   ctx.globalAlpha = a1;
-  text(TITLE_EN, W / 2, ty, 27, '#f0dfae', 'center', true);
+  text(GAME_TITLE, W / 2, ty, 30, '#f0dfae', 'center', true);
   ctx.globalAlpha = 1;
 
   // ⑥ 菜单（晚 0.5 秒淡入）
